@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Scraping</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>EMODnet project</h1>
+
+  <p>As a member of the EMODnet project I perform Web Scraping to gather river data (such as flow, temperature, ...)
+    from both URLs and APIs using libraries such as <strong>Requests</strong>, <strong>BeautifulSoup</strong>
+    and <strong>Selenium</strong>. 
+    The project is in operation in a AWS EC2 machine as we retrive this daily data from over 700 stations
+    with the cron job task scheduler and made it available an FTP server and in the ERDDAP software.
+    Since there are many stations, I monitor which ones are returning data via a map where they stations are marked
+    with the colors red (haven't retrieve in the last 30 days), yellow (haven't retrieve in the last 7 days) or green.</p>
+    
+  <p>You can check part of my personal experience in web scraping
+    from this GitHub repository:<a href="https://github.com/Figas23/web_scrapping">Web Scraping Repository</a>.</p>
+
+
+  <h2>EMODnet project monitoring</h2>
+
+  <div class="emodnet-monitoring">
+    <!-- <img src="../figas_personal/imagens_site/web_scraping_emodnet.png" alt="Monitoring Map for EMODnet"> -->
+    <img src="imagens_site/web_scraping_emodnet.png" alt="Monitoring Map for EMODnet">
+  </div>
+
+
+</body>
+</html>

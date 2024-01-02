@@ -1,0 +1,202 @@
+/* styles.css */
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 200 px;
+    padding: 0;
+    background-color: whitesmoke; /* Change the background color as desired */
+    color: #333;
+  }
+
+  h1, h2, h3 {
+    color: black;
+    margin-top: 40px; /* Increase top margin */
+    /* margin-bottom: 30px; */
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  /* CSS to position the photo */
+  .profile-photo {
+    position: fixed; /* Fix the position relative to the viewport */
+    top: 20px; /* Distance from the top of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: round the corners for a circular image */
+    z-index: 999; /* Ensure it's above other content */
+  }
+
+
+  /* Style for expertise boxes */
+  .expertise-box {
+    padding: 20px;
+    margin: 10px; /* Adjust margin around boxes */
+    border: 1px solid black; /* Change border color */
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white; /* Box background color */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+    flex: 1; /* Distribute available space evenly */
+    max-width: 200px; /* Limit maximum width of each box */
+  }
+  
+  /* Remove "learn more" button */
+  /* .expertise-box a {
+    display: none;
+  }  */
+  
+  /* Hover effect */
+  .expertise-box:hover {
+    background-color: red; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+  }
+
+  /* Wrapper for Professional Experience */
+  .professional-experience-wrapper {
+    text-align: center; /* Align content to the center */
+    margin-bottom: 20px; /* Add space below the section */
+  }
+  
+  #Professional_Experience h2 {
+    text-align: left; /* Align the title to the left */
+    margin-bottom: 10px; /* Add some space below the title */
+  }
+  
+  .expertise-container {
+    display: flex;
+    flex-wrap: nowrap; /* Keep all boxes in a single line */
+    justify-content: space-around; /* Distribute space between boxes */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+
+
+  
+/* Styling for certificates */
+  .certificate-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add some gap between images */
+  }
+  
+  .certificate-images img {
+    width: calc((100% - 40px) / 3); /* Calculate width for 3 images per row with gap */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Adjust images for smaller screens */
+  @media screen and (max-width: 768px) {
+    .certificate-images img {
+      width: calc((100% - 30px) / 3); /* For smaller screens, show 2 images per row */
+    }
+  }
+    /* Style for the JUNO project images */
+  .poster-image {
+    display: flex; /* Change display to block for images to appear one under the other */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .poster-image img {
+    width: 80%;
+    margin-bottom: 5px; 
+  }
+
+    /* Style for the JUNO front image */
+  .juno-fronts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+    
+  .juno-fronts img {
+    width: 700px;
+    margin: 20px; /* Add spacing between images */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  /* Add space around images */
+  .c3s-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between images */
+    margin-top: 20px; /* Add space between sections */
+  }
+  
+  .c3s-images img {
+    width: 700px; /* Adjust image width as needed */
+    margin: 30px; /* Add margin around images */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+    /* Add space around images */
+  .emodnet-monitoring {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between images */
+    margin-top: 20px; /* Add space between sections */
+    }
+    
+  .emodnet-monitoring img {
+    width: 700px; /* Adjust image width as needed */
+    margin: 30px; /* Add margin around images */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    }
+
+        /* Add space around images */
+  .basketball-shot-chart {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between images */
+    margin-top: 20px; /* Add space between sections */
+    }
+    
+  .basketball-shot-chart img {
+    width: 750px; /* Adjust image width as needed */
+    margin: 30px; /* Add margin around images */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    }
+
+        /* Add space around images */
+  .bathimetry-pred {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between images */
+    margin-top: 20px; /* Add space between sections */
+    }
+    
+  .bathimetry-pred img {
+    width: 700px; /* Adjust image width as needed */
+    margin: 30px; /* Add margin around images */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    }
+
+/* Wrapper for Language Skills, Soft Skills, and Other Skills */
+  .skills-wrapper {
+    display: flex;
+    justify-content: space-between; /* Distribute sections evenly */
+    gap: 20px; /* Gap between sections */
+    margin-bottom: 20px; /* Add some space below the sections */
+  }
+  
+  /* Language Skills */
+  #language-skills,
+  #soft-skills,
+  #other-skills {
+    flex: 1; /* Allow sections to grow and fill the space */
+    max-width: calc(33.33% - 20px); /* Limit the maximum width */
+  }
+
+  
